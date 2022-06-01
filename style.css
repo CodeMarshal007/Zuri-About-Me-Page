@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+    line-height: 1.2;
+
+
+}
+
+
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    color: aliceblue;
+    font-weight: 300;
+}
+
+h2 {
+    font-weight: 400;
+    color: royalblue;
+    text-align: center;
+    margin-top: 1.7em;
+    margin-bottom: 0.5em;
+}
+
+b,
+strong {
+    font-weight: 600;
+}
+
+/* navigation bar */
+.navbar {
+    background: rgb(93, 120, 201);
+    height: 70px;
+    width: 100%;
+}
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+
+}
+
+a:hover {
+    cursor: pointer;
+    border-bottom: 1px solid white;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+
+}
+
+.container h1 {
+    flex: 5;
+}
+
+.container nav {
+    flex: 4;
+}
+
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+li {
+    padding: 0px 5px;
+    margin: 0px 0x;
+
+}
+
+/* body styling */
+body {
+    background: #e8eaec;
+}
+
+
+main,
+body {
+    background: #e8eaec;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        "p p p p p p p p p p p p"
+        "g g g g g g e e e e e e"
+        "j j j j j j s s s s s s";
+    justify-content: center;
+    align-content: center;
+
+}
+
+.personal-statement {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0%;
+    grid-area: p;
+
+}
+
+.goal {
+    text-align: center;
+    grid-area: g;
+}
+
+.goal li {
+    list-style-type: none;
+}
+
+.education {
+    text-align: center;
+    grid-area: e;
+}
+
+.job {
+    text-align: center;
+    grid-area: j;
+}
+
+
+.skills{
+    grid-area: s;
+    text-align: center;
+}
+
+.connect {
+    border: none;
+    margin-bottom: 20px;
+    width: 385px;
+    max-height: 25px;
+    background: #e8eaec;
+    box-shadow: 10px 10px 40px 10px rgb(172, 188, 204);
+    border-radius: 10%;
+    margin: 5px auto;
+    
+}
+
+#connect {
+
+    width: 385px;
+    border-radius: 10%;
+
+}
+
+#connect a {
+    color: rgb(22, 22, 22);
+    font-size: large;
+}
+
+
+#name {
+    font-size: xx-large;
+}
+
+body ul {
+    list-style-type: none;
+}
+
+/* footer */
+
+.footer{
+    background: rgb(93, 120, 201);
+    margin: 50px;
+    height: 50px;
+    width: 100%;
+}
+
+.footer div{
+    text-align: start;
+    padding-top: 0px;
+    color: aliceblue;
+}
+
+/* utility style for all forms: contact me, login, register */
+
+.utility {
+    margin-bottom: 20px;
+    display: flex;
+    width: 385px;
+    height: auto;
+    background: #e8eaec;
+    box-shadow: 10px 10px 40px 10px rgb(172, 188, 204);
+    border-radius: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.utility textarea,
+.utility select {
+    height: 100%;
+    width: 70%;
+    border: none;
+    background: #e8eaec;
+    box-shadow: 5px 5px 30px 5px rgb(172, 188, 204);
+    border-radius: 4%;
+}
+
+.utility input:focus,
+.utility textarea:focus {
+    background: rgb(219, 222, 224);
+}
+
+
+.utility input:hover,
+.utility textarea:hover,
+.utility select {
+    background: rgb(219, 222, 224);
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+button {
+    padding: 10px;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    box-shadow: 5px 5px 30px 5px rgb(172, 188, 204);
+    border-radius: 10%;
+}
+
+button:hover {
+    cursor: pointer;
+    background: rgb(219, 222, 224);
+    border: 1px solid white;
+}
+
+
+#login {
+    width: 100%;
+}

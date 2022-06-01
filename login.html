@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Login</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="container">
+      <h1>CodeMarshal</h1>
+      <nav>
+        <ul class="nav">
+          <li><a href="./index.html">About me </a></li>
+          <li><a href="./contact.html">Contact </a></li>
+          <li><a href="./register.html">Register </a></li>
+          <li><a href="./login.html">Login </a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<main>
+  <h2>Login</h2>
+  <div class="utility">
+    <form action="">
+      <p><label for="email">Email</label>
+        <input type="email" name="email" placeholder="Enter your email" required>
+      </p>
+
+      <p>
+        <label for="password">Password </label> <br />
+        <input type="password" name="password" placeholder="Enter your password" id="login"
+          pattern="(? = . * [a -z]) . {8}" title="Must be 8 characters or more" required />
+      </p>
+      <p>
+        <input type="checkbox" name="Remember" name="Remember"/>
+        <label for="Remember">Remember me </label>
+      </p>
+
+      <button type="submit">Sign In</button><br /><br />
+    </form>
+  </div>
+  </main>
+  <footer class="footer">
+    <div>
+      <h3>&copy; 2022| CodeMarshal</h3>
+
+    </div>
+
+  </footer>
+</body>
+
+</html>

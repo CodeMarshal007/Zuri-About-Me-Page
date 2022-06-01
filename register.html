@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Register</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="container">
+      <h1>CodeMarshal</h1>
+      <nav>
+        <ul class="nav">
+          <li><a href="./index.html" id="about">About me </a></li>
+          <li><a href="./contact.html">Contact </a></li>
+          <li><a href="./register.html">Register </a></li>
+          <li><a href="./login.html">Login </a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <h2>Register</h2>
+    <div class=" register utility">
+      <form action="">
+        <p><label for="fname">First Name </label>
+          <input type="text" name="fname" placeholder="Enter your first name" minlength="3" maxlength="10" required>
+        </p>
+
+        <p><label for="lname">Last Name </label>
+          <input type="text" name="lname" placeholder="Enter your last name" minlength="3" maxlength="10" required>
+        </p>
+
+        <p><label for="phone">Phone </label>
+          <input type="tel" name="phone" placeholder="Enter your phone number" required>
+        </p>
+
+        <p><label for="gender">Gender </label>
+          <select name="gender">
+            <option value="Male">Male </option>
+
+            <option value="Female">Female </option>
+
+            <option value="Preferred not to say">Preferred not to say </option>
+          </select>
+        </p>
+
+        <p><label for="country">Country </label>
+          <input type="text" name="country" placeholder="Nationality" minlength="3" maxlength="10" required>
+        </p>
+
+        <p><label for="state">State/Province </label>
+          <input type="text" name="state" placeholder="Enter your state" minlength="3" maxlength="10" required>
+        </p>
+
+        <p><label for="email">Email</label>
+          <input type="email" name="email" placeholder="Enter your email" required>
+        </p>
+
+        <p><label for="username">Username </label>
+          <input type="text" name="username" placeholder="choose a username" minlength="3" maxlength="10" required>
+        </p>
+
+        <p><label for="password">Password </label>
+          <input type="password" name="password" placeholder="Set your password" pattern="(? = . * [a -z]) . {8}"
+            title="Must be 8 characters or more" required>
+        </p>
+
+        <p><label for="comfirm_password">Confirm Password </label>
+          <input type="password" name="password" placeholder="Re-enter password" required>
+        </p>
+
+        <button type="submit">Register</button><br><br>
+
+        <P>Already have an account? <button type="submit">Sign in</button> </P>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <h3>&copy; 2022| CodeMarshal</h3>
+
+    </div>
+
+  </footer>
+
+</body>
